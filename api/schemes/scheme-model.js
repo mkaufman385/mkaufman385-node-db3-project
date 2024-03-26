@@ -107,7 +107,7 @@ async function findById(scheme_id) {
   rows.forEach((row) => {
     if (row.step_id) {
       result.steps.push({
-        scheme_id: row.step_id,
+        step_id: row.step_id,
         step_number: row.step_number,
         instructions: row.instructions,
       });
